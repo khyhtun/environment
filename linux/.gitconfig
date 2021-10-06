@@ -1,0 +1,42 @@
+[alias]
+	cg = config --global
+	co = checkout
+	rso = remote show origin
+	br = branch
+	st = status
+	rhh = reset HEAD --hard
+	sl = log --pretty=oneline
+	lg = log --all --decorate --oneline --graph
+	lp = log --all --decorate --oneline --graph --first-parent
+	lpnm = log --all --decorate --oneline --graph --first-parent --no-merges
+	rh = reset --hard
+[user]
+	email = khine.htun@aurora.tech
+	name = Khine Htun
+	signingkey = 6E2140ACCEB49E14481E2F6DE53850549A9A9B45
+[color]
+	ui = true
+[core]
+	excludesfile = /home/khine_htun/.gitignore_global
+	autocrlf = true
+[push]
+	default = current
+[pull]
+	default = current
+[diff]
+	tool = p4mergetool
+[difftool "p4mergetool"]
+	cmd = " $LOCAL $REMOTE"
+[mergetool "p4mergetool"]
+	cmd = " $BASE $LOCAL $REMOTE $MERGED"
+	trustExitCode = false
+[difftool]
+	prompt = false
+[merge]
+	tool = p4mergetool
+[mergetool]
+	keepBackup = false
+[gpg]
+	program = gpg
+[commit]
+	gpgsign = true

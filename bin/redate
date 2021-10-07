@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -type f -name "*.XML" -exec touch -t 201812251200 {} +

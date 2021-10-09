@@ -1,0 +1,6 @@
+#!/bin/zsh
+cd $podcast
+echo $(ls *.mp3 | grep -i "\-$1\-" | wc -l)
+#echo $(ls *.mp3 | sed -n "$1"p)
+echo $(ls *.mp3 | grep -i "\-$1\-" | sed -n 1p) | awk '{split($0, a, "-"); printf "%s\n%s\n%s\n",a[4], a[5], a[3]}' | cut -d"." -f1
+open $(ls *.mp3 | grep -i "\-$1\-" | sed -n 1p) 2>/dev/null

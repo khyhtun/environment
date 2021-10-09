@@ -1,0 +1,2 @@
+#!/bin/zsh
+docker container ls -a | sed -n "$1P" | awk '{print $NF}'

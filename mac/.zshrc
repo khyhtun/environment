@@ -77,7 +77,7 @@ ZSH_THEME_RANDOM_CANDIDATES=( "agnoster" "powerlevel10k/powerlevel10k")
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx alias-finder mvn systemd zsh-syntax-highlighting zsh-autosuggestions vi-mode terraform docker docker-compose)
+plugins=(git macos alias-finder mvn systemd zsh-syntax-highlighting zsh-autosuggestions vi-mode terraform docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 

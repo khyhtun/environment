@@ -1,0 +1,2 @@
+#!/bin/zsh
+kill -9 $(ps auwxx | grep -i Mail | grep -v exclude | awk '{print $2}')

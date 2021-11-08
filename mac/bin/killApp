@@ -1,0 +1,3 @@
+#!/bin/zsh
+echo "--- $1"
+kill -9 $(ps auxww | grep -v exclude | grep -i $1 | awk '{print $2}')

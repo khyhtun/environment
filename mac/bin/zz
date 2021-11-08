@@ -1,0 +1,3 @@
+#!/bin/bash
+echo bart | sudo -S shutdown -s +1 
+$xx

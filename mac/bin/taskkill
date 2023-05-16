@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "killing all processes of $1"
+for x in $(pidof $1)
+do
+	echo $x
+	kill -9 $x
+done

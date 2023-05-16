@@ -1,0 +1,2 @@
+#!/bin/sh
+netstat -anop | grep "127.0.0.1:8000.*LISTEN" | awk -F"[ /t]" '{print $48}'

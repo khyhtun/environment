@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+#no input required
+TZ='UTC' date
+TZ='America/Los_Angeles' date
+TZ='America/Denver' date
+TZ='America/New_York' date

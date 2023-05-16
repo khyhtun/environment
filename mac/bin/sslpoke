@@ -1,0 +1,2 @@
+#!/bin/sh
+java -Djavax.net.ssl.trustStore=$1 SSLPoke $2 443

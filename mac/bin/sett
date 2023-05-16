@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+echo "export x=$1" > ./setX.sh
+source ~/bin/setX.sh
+chmod +x ./setX.sh

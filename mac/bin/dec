@@ -1,0 +1,2 @@
+#!/bin/sh
+/Users/khine.htun/jasypt/jasypt-1.9.3/bin/decrypt.sh input=$1 password="$2"

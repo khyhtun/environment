@@ -1,0 +1,21 @@
+#!usr/bin/env sh
+while true;
+do
+x=`batteryCondition | grep "State\ of\ Charge" |  awk '{print $5}'`
+date1=$(date +%s)
+date2=
+#echo $date1
+if [ $x -lt 15 ];
+then
+	date2=$(date +%s)
+	echo $(($date2-$date1))
+	echo $(( (date2 - date1)/86400))
+	while [ $x -lt 15 ];
+	do
+		tput bel
+		sleep 10
+		x=`batteryCondition | grep "State\ of\ Charge" |  awk '{print $5}'`
+	done
+fi
+sleep 300
+done
